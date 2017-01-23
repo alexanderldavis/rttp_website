@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+			Purpose: About page of the RTTP Game Portal Website
+			Author: Alexander Davis
+			Date: 12/5/16
+			Filename: about.html
+-->
+		
+	<title>About RTTP</title>
+	<meta charset="utf-8" />
+	<!-- SOURCE: https://fonts.googeapis.com Used for all font on all pages. Available for 
+	free for all use through Google License.-->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+	<link href="../CSS/reset.css" rel="stylesheet"/>
+	<link href="../CSS/styles.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- Source: https://fullcalendar.io/ Used for calendar on this page. The JS is available
+	for free for all use under Open Source MIT License. -->
+	<link href='../JS/fullcalendar.min.css' rel='stylesheet' />
+	<link href='../JS/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+	<script src='../JS/lib/moment.min.js'></script>
+	<script src='../JS/lib/jquery.min.js'></script>
+	<script src='../JS/fullcalendar.min.js'></script>
+	<script src="../JS/myslideshow.js"></script>
+	<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			height: 450,
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2017-02-12',
+			navLinks: true, // can click day/week names to navigate views
+			editable: false,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: '[CLASS DAY 1]-Character Assignments',
+					start: '2017-02-02T18:00:00',
+					end: '2017-02-02T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Read Character Profile',
+					start: '2017-02-03',
+					end: '2017-02-09'
+				},
+				{
+					title: '[CLASS DAY 2]-Election Round #1',
+					start: '2017-02-09T18:00:00',
+					end: '2017-02-09T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-02-10',
+					end: '2017-02-16'
+				},
+				{
+					title: '[CLASS DAY 3]-Debate and Discussion Day 1',
+					start: '2017-02-16T18:00:00',
+					end: '2017-02-16T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-02-17',
+					end: '2017-02-23'
+				},
+				{
+					title: '[CLASS DAY 4]-Debate and Discussion Day 2',
+					start: '2017-02-23T18:00:00',
+					end: '2017-02-23T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-02-24',
+					end: '2017-03-02'
+				},
+				{
+					title: '[CLASS DAY 5]-Protests/Demonstrations',
+					start: '2017-03-02T18:00:00',
+					end: '2017-03-02T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-03-03',
+					end: '2017-03-09'
+				},
+				{
+					title: '[CLASS DAY 6]-Election Round #2',
+					start: '2017-03-09T18:00:00',
+					end: '2017-03-09T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-03-10',
+					end: '2017-03-16'
+				},
+				{
+					title: '[CLASS DAY 7]-Class Debrief',
+					start: '2017-03-16T18:00:00',
+					end: '2017-03-16T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Final Paper',
+					start: '2017-03-17',
+					end: '2017-03-23'
+				},
+				{
+					title: '[FINAL PAPER DUE]',
+					start: '2017-03-23T18:00:00',
+					end: '2017-03-23T21:00:00'
+				},
+			]
+		});
+		
+	});
+</script>
+
+	
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<a href="../index.html"><img src="../IMAGES/logo.png"  alt="logo"/></a>
+		<nav class="horizontal">
+		<ul class="mainmenu">
+        	<li><a href="../index.html">Home</a></li>
+            <li><a id = "currentpage" href="#" class="submenuTitle">About RTTP</a>
+            	<ul class="submenu">
+                	<li><a id = "currentpage1" href="about.html">Intro to RTTP</a></li>
+                  	<li><a href="https://reacting.barnard.edu/" target="_blank">Barnard.edu </a></li>                 
+            	</ul>
+            </li>
+            <li><a href="#" class="submenuTitle">Students</a>
+            	<ul class="submenu">
+                	<li><a href="profile.html">Character Profile</a></li>
+                  	<li><a href="overview.html">Daily Overview</a></li>
+                  	<li><a href="newspaper.html">Student Newspaper</a></li>
+                  	<li><a href="references.html">References</a></li>
+               	</ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        	<li><a href="help.html">Help</a> </li>
+		</ul>
+	</nav>
+    <br>
+	</header>
+	
+	<!-- Section -->
+	<section>
+		<article>
+    		<h2>About Reacting to the Past</h2>
+   			<div id="maindivslideshow" onload="changeImage(0)">
+   				<div id ="slideshowmain">
+   					<img id="slideshow" src="../IMAGES/SLIDESHOW/slideshowpic-1.jpg" alt="
+   					slideshow element"/>
+   					<!-- SOURCE: https://www.flickr.com/photos/lcphotobureau/26158762243/
+   					in/photolist-FRyvdn-FRyvZn-GLTiAk-FRodZ1-FRyuE8-FRywCX-FRywuF-FRyvmi-
+   					EP4TjM-EERT4V-EP4TUV-EfA1LT-DRFLZK-DRm7vQ-DRFNLa-EERW6B-DRFPLX-EP4Twa-
+   					EfA3hZ-EERUkT-EERV5t-ECALYm-ECAMgq-EfA44Z-DRFMBr-ECAPjJ-DRm7iL-EfA1ge-
+   					C2CFPz-BApYVH-BGNkmU-BcvY6r-BGNkHA-BcqAv3-BcvXYx-BcvXoe-BApYAK-9kKYQU-
+   					9kKYuU-9kKWYJ-9kGTWM-9kKXcL-9kKXMQ-9kGTip-9kGTwP-9kGUs6-9kGUG6-9kGV1D-
+   					AGLHRC-GhV2Yn -->
+   					<br>&copy; Luther College Photo Bureau
+					<div style="float: right;">
+						<button onclick="changeImage(-1)">Previous</button>
+						<button onclick="changeImage(1)">Next</button>
+						<button onclick="auto()">Auto</button>
+						<button onclick="stop()">Stop</button>
+			</div>
+				</div>
+   			</div>
+   			<p>Reacting to the Past simulations (RTTP) are interactive and unique learning
+   			experiences that allow students to immerse themselves into historical events. 
+   			RTTP encourages student involvement and provides students a venue to formulate 
+   			abstract ideas in foreign languages. Since RTTP addresses real, historical 
+   			moments of crisis, students can research these events on their own to increase
+   			their chance of winning the simulation. RTTP games also develops friendships 
+   			and communities of students that continue to interact with each other outside 
+   			of the classroom.</p>
+   			<blockquote id="blockquote1">I like the RTTP games because it brings a 
+   			fun, different perspective into the classroom. I feel that I learn more and 
+   			improve my language more while doing the games, than in a regular class.<br>
+   			-Kyla Grau, Luther College '17
+   			</blockquote>
+   			<p>While it delivers similar information, RTTP simultaneously fosters the 
+   			development of community, creativity, and collaborative competition to allow 
+   			students to understand material by interacting with the material. Empowering 
+   			students to make decisions in RTTP games enables them to engage with other 
+   			cultures and develop empathy for historical characters.</p>
+   			<p>Several studies conducted on the use of RTTP curriculum suggests that RTTP
+   			can in fact contribute to student communities. Working in conjunction with peers
+   			on a consistent basis allow students to form friendships at a faster rate than
+   			in ordinary classrooms. These friendships are of particular importance at liberal
+   			arts institutions, as students focused on their majors have very few 
+   			opportunities to interface with students of other majors. By developing these
+   			cross-major relationships in language and other courses, students can benefit
+   			from a diverse wealth of knowledge and perspectives.</p>
+   			<blockquote id="blockquote2">
+   			Being in an RTTP game was extremely helpful for me, because it forced me to 
+   			interact with people in a more conversational way rather than preparing a 
+   			script for the day or memorizing vocabulary to use. It was definitely 
+   			competitive, because meeting objectives was fun, and it also helped to create 
+   			a community in the classroom. I had never met the people in my group before, 
+   			and after the game, I could consider them to be friends.<br>
+   			-Desiree Bradshaw, Luther College '17</blockquote>
+   			<p>RTTP is an efficient method of building classroom communities with a main
+   			goal in mind. Students participating in RTTP games report that they thoroughly
+   			enjoyed being able work with fellow peers on a common project, and found that
+   			they were more active in their reading of assigned materials.</p>
+   			<p>While it delivers similar information, RTTP simultaneously fosters the 
+   			development of community, creativity, and collaborative competition to allow 
+   			students to understand material by interacting with the material. Empowering 
+   			students to make decisions in RTTP games enables them to engage with other 
+   			cultures and develop empathy for historical characters.</p>
+   			<p>RTTP is a pedagogy that has been implemented at over 200 Universities and 
+   			Colleges across the United States. Luther College is proud to host a French
+   			program dedicated to implementing the RTTP pedagogy in its classrooms.</p>
+		</article>
+
+		<!-- Aside -->
+		<aside id="mainaside">
+        	<div id="breakingnews">
+				<h3 id="mainasideheadertype">BREAKING NEWS!<br> Student Newspaper
+				 Headlines</h3>
+				<!-- SOURCE: https://google.com Used for embedding Google Drive. Available
+				for free for all use through Google License.-->
+				<iframe src="https://drive.google.com/embeddedfolderview?id=0B5mJbivqoHUVajcxdTUzSDJRU0k#list" 
+				id="mainasideiframe"></iframe>
+			</div><br>
+   	  		<div id="minicalendar">
+				<h3 id="amainasideheadertype">UPCOMING EVENTS!<br> Overview of
+				Class Events</h3>
+				<div id='calendar'></div>
+    		</div>
+		</aside>
+	</section>
+   
+	<footer>
+    	Website Designed by Alexander Davis &#8855;
+		Report any technical issues with the website to your professor.
+	</footer>
+</body>
+</html>
