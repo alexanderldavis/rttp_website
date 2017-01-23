@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+   /*
+			Purpose: Layout css code for all pages in RTTP Game Portal Website
+			Author: Alexander Davis
+			Date: 12/5/16
+			Filename: layout.css
+	*/
+
+
+/* HTML and Body Styles */
+
+html {
+   height: 100%;
+   font-family: 'Lato', sans-serif;
+   font-size: 12px;
+}
+
+body {
+   background-color: rgb(72, 142, 139);   
+   box-shadow: rgb(51, 51, 51) 5px 0px 15px,
+               rgb(51, 51, 51) -5px 0px 15px;
+   margin: 0px auto;
+   min-height: 100%;
+   min-width: 320px;
+   width: 100%;
+}
+
+/* Body Header Styles */
+
+body header {
+   background: rgb(72, 142, 139);   
+}
+
+body header img {
+   width: 100%;
+}
+
+
+/* Horizonal Navigation Styles */
+
+nav.horizontal {
+   background-color: rgb(117, 140, 72);
+   min-height: 2em;
+}
+
+nav.horizontal li {
+   color: rgb(31, 73, 125);
+   display: block;
+   line-height: 2em;
+   text-transform: uppercase;
+}
+
+nav.horizontal a {
+   display: block;
+   font-size: 1em;
+}
+
+nav.horizontal a:visited, nav.horizontal a:link {
+   color: rgb(31, 73, 125);
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   background-color: rgb(31, 73, 125);
+   color: white;
+}
+
+/* Main Menu Styles */
+
+ul.mainmenu {
+   display: block;
+}
+
+ul.mainmenu > li {
+   text-indent: 15px;
+}
+
+#currentpage {
+   color: white;
+   background-color: rgb(31, 73, 125);
+}
+
+#currentpage1 {
+	color: white;
+	background-color: rgb(31, 73, 125);
+}
+
+/* Submenu Styles */
+
+ul.submenu {
+   width: 100%;
+   background-color: rgb(181, 204, 136);
+}
+
+
+/* Section Styles */
+
+section {
+   background-color: rgb(154, 205, 234);
+   clear: both;
+}
+
+section::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+section img {
+   display: block;
+   width: 100%;
+}
+
+section p {
+   line-height: 1.4em;
+   padding: 10px;
+   font-size: 1.2em;
+}
+
+section article h2 {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 0;
+	font-size: 25px;
+	text-align: center;
+}
+
+section article h4 {
+	padding-bottom: 15px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#blockquote1 {
+	background: rgb(238, 143, 143);
+	width: 30%;
+	float: left;
+	margin: 10px;
+	padding:10px;
+	text-align: center;
+}
+
+#blockquote2 {
+	background: rgb(238, 143, 143);
+	width: 30%;
+	float: right;
+	margin: 10px;
+	padding:10px;
+	text-align: center;
+}
+
+#mainpicture {
+	float: right;
+	width: 40%;
+	margin: 0 0 15px 20px;
+	padding: 15px; 
+	text-align: center;
+}
+
+#maindivslideshow {
+	float: right;
+	margin-left: 5px;
+	width: 40%;
+}
+
+#slideshowmain {
+	float: right;
+}
+
+#characterprofilemain {
+	width: 100%;
+	height: 530px;
+	margin-left: 15px;
+	border: 0;
+}
+
+#largecalendar {
+	height: 530px;
+	padding: 10px;
+	margin: 15px;
+	width: 100%;
+}
+
+#mainsectionarticleiframe {
+	width: 100%;
+	height: 530px;
+	border: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+#divref1 {
+	margin-left:25px;
+}
+
+#divref2 {
+	list-style-type: disc;
+	text-decoration: none;
+}
+
+#listhelp1 {
+	font-size: 14px;
+	margin-left: 25px;
+	margin-bottom: 12px;
+	list-style-type: disc;
+}
+
+#listhelp2a {
+	font-size: 12px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	list-style-type: disc;
+}
+
+#listhelp2b {
+	font-size: 12px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	list-style-type: disc;
+}
+
+#listhelp2c {
+	font-size: 12px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	list-style-type: disc;
+}
+
+#listhelp2d {
+	font-size: 12px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	list-style-type: disc;
+}
+
+
+/* Aside Styles */
+
+aside {
+   display: block;
+   margin-top: 15px;
+   background-color: rgb(181, 204, 136);
+}
+
+#mainaside {
+	margin-bottom:15px;
+}
+
+#breakingnews {
+	height:100%;
+}
+
+#mainasideheadertype {
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center; 
+	background-color: rgb(245, 141, 144);
+}
+
+#amainasideheadertype {
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center; 
+	background-color: rgb(245, 141, 144);
+}
+
+
+#mainasideiframe {
+	width: 100%;
+	border: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+#calendar {
+	margin: 15px;
+}
+
+/* Footer Styles */
+
+body > footer {
+	font-size: 0.9em;
+	padding: 10px 0px;
+	background-color: rgb(72, 142, 139);
+	text-align: center;
+	color: rgb(219, 232, 232);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Pulldown Menu Styles */
+ul.submenu {
+	display: none;
+}
+
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+	display: block;
+}
+
+
+
+/* New Styles Added Below */
+
+@media only screen and (max-width: 480px) {
+	nav.horizontal a{
+		font-size: 1.5em;
+		line-height: 2.2em;
+		background-color: rgb(131, 181, 206);
+	}
+	
+	#characterprofilemain {
+		margin-left: 0px;
+	}
+	
+	aside {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	ul.mainmenu > li {
+		float: left;
+		width: 20%;
+		position: relative;
+		background-color: rgb(131, 181, 206);
+	}
+	
+	ul.submenu {
+		width: 200%;
+		position: absolute;
+	}
+
+}
+
+@media only screen and (min-width: 769px) {
+	ul.submenu {
+		width: 100%;
+		background-color: rgb(131, 181, 206);
+	}
+	
+	nav.horizontal::after {
+		clear: both;
+		content: "";
+		display: table;
+		background-color: rgb(131, 181, 206);
+	}
+	
+	nav.horizontal a.submenuTitle {
+		background-color: rgb(131, 181, 206);
+	}
+	
+	article {
+		float: left;
+		margin-right: 5%;
+		width: 70%;
+	}
+	
+	aside {
+		float: right;
+		width: 25%;
+	}
+}
+
+
+
+
+
+
+
+

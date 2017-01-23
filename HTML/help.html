@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+			Purpose: Offers information about the composition of the RTTP Game Portal Website
+			Author: Alexander Davis
+			Date: 12/5/16
+			Filename: help.html
+-->
+		
+	<title>Help</title>
+	<meta charset="utf-8" />
+	<!-- SOURCE: https://fonts.googeapis.com Used for all font on all pages. Available for 
+	free for all use through Google License.-->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+	<link href="../CSS/reset.css" rel="stylesheet"/>
+	<link href="../CSS/styles.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- Source: https://fullcalendar.io/ Used for calendar on this page. The JS is available
+	for free for all use under Open Source MIT License. -->
+	<link href='../JS/fullcalendar.min.css' rel='stylesheet' />
+	<link href='../JS/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+	<script src='../JS/lib/moment.min.js'></script>
+	<script src='../JS/lib/jquery.min.js'></script>
+	<script src='../JS/fullcalendar.min.js'></script>
+	<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			height: 450,
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2017-02-12',
+			navLinks: true, // can click day/week names to navigate views
+			editable: false,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: '[CLASS DAY 1]-Character Assignments',
+					start: '2017-02-02T18:00:00',
+					end: '2017-02-02T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Read Character Profile',
+					start: '2017-02-03',
+					end: '2017-02-09'
+				},
+				{
+					title: '[CLASS DAY 2]-Election Round #1',
+					start: '2017-02-09T18:00:00',
+					end: '2017-02-09T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-02-10',
+					end: '2017-02-16'
+				},
+				{
+					title: '[CLASS DAY 3]-Debate and Discussion Day 1',
+					start: '2017-02-16T18:00:00',
+					end: '2017-02-16T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-02-17',
+					end: '2017-02-23'
+				},
+				{
+					title: '[CLASS DAY 4]-Debate and Discussion Day 2',
+					start: '2017-02-23T18:00:00',
+					end: '2017-02-23T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-02-24',
+					end: '2017-03-02'
+				},
+				{
+					title: '[CLASS DAY 5]-Protests/Demonstrations',
+					start: '2017-03-02T18:00:00',
+					end: '2017-03-02T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-03-03',
+					end: '2017-03-09'
+				},
+				{
+					title: '[CLASS DAY 6]-Election Round #2',
+					start: '2017-03-09T18:00:00',
+					end: '2017-03-09T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Speech/Newspaper Article',
+					start: '2017-03-10',
+					end: '2017-03-16'
+				},
+				{
+					title: '[CLASS DAY 7]-Class Debrief',
+					start: '2017-03-16T18:00:00',
+					end: '2017-03-16T21:00:00'
+				},
+				{
+					title: 'Preparation for Class-Write Final Paper',
+					start: '2017-03-17',
+					end: '2017-03-23'
+				},
+				{
+					title: '[FINAL PAPER DUE]',
+					start: '2017-03-23T18:00:00',
+					end: '2017-03-23T21:00:00'
+				},
+			]
+		});
+		
+	});
+</script>
+
+	
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<a href="../index.html"><img src="../IMAGES/logo.png"  alt="logo"/></a>
+		<nav class="horizontal">
+		<ul class="mainmenu">
+        	<li><a href="../index.html">Home</a></li>
+            <li><a href="#" class="submenuTitle">About RTTP</a>
+            	<ul class="submenu">
+                	<li><a href="about.html">Intro to RTTP</a></li>
+                  	<li><a href="https://reacting.barnard.edu/" target="_blank">Barnard.edu </a></li>                 
+            	</ul>
+            </li>
+            <li><a href="#" class="submenuTitle">Students</a>
+            	<ul class="submenu">
+                	<li><a href="profile.html">Character Profile</a></li>
+                  	<li><a href="overview.html">Daily Overview</a></li>
+                  	<li><a href="newspaper.html">Student Newspaper</a></li>
+                  	<li><a href="references.html">References</a></li>
+               	</ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        	<li><a id = "currentpage" href="help.html">Help</a> </li>
+		</ul>
+	</nav>
+    <br>
+	</header>
+	
+	<!-- Section -->
+	<section>
+		<article>
+    		<h2><strong>Website Details</strong></h2>
+   		<p>To the right of each page, use the Quick Navigation links to find the page you need, or
+   		use the horizontal navigation. A description of each page is available here:
+   			<ul id="listhelp1">
+   				<li>Character Profile
+   					<ul id="listhelp2a">
+   						<li>Each student is assigned an RTTP character, usually a historical figure.
+   						This student must act in the best interest of the character in order to win the
+   						simulation. Each character profile contains valuable information about
+   						the character's strengths and weaknesses, as well as key objectives and
+   						research options for the student. For the duration of the game, these objectives
+   						should be kept secret, as divulging this information in class may give opponents an advantage!
+   						For this reason, this page requires students to enter their teacher-assigned
+   						username and password.</li>
+   					</ul>
+   				</li>
+   				<li>Daily Overview
+   					<ul id="listhelp2b">
+   						<li>The Daily Overview Pane offers students a detailed view of the day-to-day events of the class. In a typical
+   						RTTP game, the simulation may span several days of class, and it is crucial that every student is prepared to present
+   						their character's intentions at the opportune time.
+   						</li>
+   					</ul>
+   				</li>
+   				<li>Class Newspaper
+   					<ul id="listhelp2c">
+   						<li>Written assignments in RTTP games usually manifest themselves as newspaper articles published by students
+   						to express their character's views. Instead of printing out their articles and distributing them in class, students
+   						will be able to upload a Google Drive file to a class folder, and read each other's entries online. The "BREAKING NEWS!" section
+   						above the Quick Navigation links shows the most recent entries first, so that students have the opportunity to read their peers' work.</li>
+   					</ul>
+   				</li>
+   				<li>References
+   					<ul id="listhelp2d">
+   						<li>Student material, RTTP syllabus, and other research links.</li>
+   					</ul>
+   				</li>
+   			</ul>
+		</article>
+
+		<!-- Aside -->
+		<aside id="mainaside">
+        	<div id="breakingnews">
+				<h3 id="mainasideheadertype">BREAKING NEWS!<br> Student Newspaper
+				 Headlines</h3>
+				<!-- SOURCE: https://google.com Used for embedding Google Drive. Available
+				for free for all use through Google License.-->
+				<iframe src="https://drive.google.com/embeddedfolderview?id=0B5mJbivqoHUVajcxdTUzSDJRU0k#list" 
+				id="mainasideiframe"></iframe>
+			</div><br>
+   	  		<div id="minicalendar">
+				<h3 id="amainasideheadertype">UPCOMING EVENTS!<br> Overview of
+				Class Events</h3>
+				<div id='calendar'></div>
+    		</div>
+		</aside>
+	</section>
+   
+	<footer>
+    	Website Designed by Alexander Davis &#8855;
+		Report any technical issues with the website to your professor.
+	</footer>
+</body>
+</html>
